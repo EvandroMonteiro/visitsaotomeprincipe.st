@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_seo_metas",
+  "info": {
+    "name": "Metas",
+    "icon": "database",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "LOREM IPSUM",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "default": "LOREM IPSUM",
+      "required": true
+    },
+    "imagem_partilha": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "title_en": {
+      "type": "string",
+      "default": "LOREM IPSUM",
+      "required": true
+    },
+    "description_en": {
+      "type": "text",
+      "default": "LOREM IPSUM",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_menu_top_items",
+  "info": {
+    "name": "menuTopItem",
+    "icon": "angle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "seccoes": {
+      "collection": "seccoes-menu"
+    }
+  }
+}

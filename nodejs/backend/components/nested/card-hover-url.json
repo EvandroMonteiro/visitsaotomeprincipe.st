@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_nested_card_hover_urls",
+  "info": {
+    "name": "cardHoverUrl",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "imagem": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "ancora": {
+      "type": "string"
+    },
+    "titulo_en": {
+      "type": "string"
+    },
+    "ancora_en": {
+      "type": "string"
+    }
+  }
+}

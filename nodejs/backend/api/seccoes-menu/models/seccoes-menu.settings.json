@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seccoes_menu",
+  "info": {
+    "name": "Secções Menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": false
+    },
+    "slug": {
+      "type": "string"
+    },
+    "body": {
+      "type": "dynamiczone",
+      "components": [
+        "nested.menu-item-alojamentos",
+        "nested.menu-item-categorias",
+        "nested.menu-item-informacoes",
+        "nested.menu-item-locais-actividades",
+        "nested.menu-item-paginas",
+        "nested.menu-item-regioes",
+        "nested.menu-item-restaurantes",
+        "nested.menu-item-sobre-nos",
+        "nested.menu-item-tours-transportes",
+        "nested.menu-item-destaque"
+      ]
+    },
+    "titulo_en": {
+      "type": "string"
+    },
+    "slug_en": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    }
+  }
+}
