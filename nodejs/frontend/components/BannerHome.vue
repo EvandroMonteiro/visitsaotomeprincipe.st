@@ -16,7 +16,9 @@
         <h1 v-if="titulo != ''" class="text-center text-black  leading-tight">
           {{ titulo }}
         </h1>
-        <h3 v-if="subtitulo != ''" class="text-2xxl" >Verdadeira Tranquilidade</h3>
+        <h3 v-if="subtitulo != ''" class="text-2xxl">
+          Verdadeira Tranquilidade
+        </h3>
         <ButtonCta
           v-if="ctatexto != ''"
           class="mt-15 lg:mt-40"
@@ -83,7 +85,11 @@
             :key="index"
             :titulo="slide.nome"
             :link="slide.slug"
-            :imagem="slide.banner ? base_url(slide.banner.url) : 'https://www.admin.saotome.made2grow.com/uploads/banner_sobre_da6af939f1.jpg'"
+            :imagem="
+              slide.banner
+                ? base_url(slide.banner.url)
+                : `${$config.adminUrl}/uploads/banner_sobre_da6af939f1.jpg`
+            "
             class="swiper-slide"
           />
         </CarrouselCard>

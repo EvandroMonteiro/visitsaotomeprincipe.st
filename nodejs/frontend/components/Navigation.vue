@@ -428,7 +428,6 @@ export default class Navigation extends Vue {
   @Prop() menu!: any
 
   get _menu(): any {
-    console.log(this.menu);
     return this.menu
   }
 

@@ -30,7 +30,7 @@ export default Vue.extend({
           slug: 'tours-e-transportes'
         }
       })
-      console.log(data.paginas[0]);
+
       return {
         pagina: data.paginas[0],
         breadcrumbs: [
